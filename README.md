@@ -1,1 +1,1 @@
-# python_darslari
+Bu yerda python darslariga praktikalar bo'ladi
