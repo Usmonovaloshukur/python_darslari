@@ -360,43 +360,96 @@
 # else:
 #     print(davlatlar[davlat].title())
 
-taomlar = {
-    "osh":32000,
-    "kabob":30000,
-    "non":6000,
-    "salat":12000,
-    "pepsi":15000,
-    "limonchoy":6000,
-    "baliqkabob":30000,
-    "jiz":60000,
-    "tovuqkabob":15000,
-    "lag'mon":25000,
-    "norin":20000
-}
+# taomlar = {
+#     "osh":32000,
+#     "kabob":30000,
+#     "non":6000,
+#     "salat":12000,
+#     "pepsi":15000,
+#     "limonchoy":6000,
+#     "baliqkabob":30000,
+#     "jiz":60000,
+#     "tovuqkabob":15000,
+#     "lag'mon":25000,
+#     "norin":20000
+# }
 
-b_taomlar= []
-print("3 ta taom buyurtma bering! ")
-for i in range(3):
-    b_taomlar.append(input(f"{i+1} - taom: "))
+# b_taomlar= []
+# print("3 ta taom buyurtma bering! ")
+# for i in range(3):
+#     b_taomlar.append(input(f"{i+1} - taom: "))
+#
+# for b_taom in b_taomlar:
+#     if b_taom in taomlar:
+#         print(f"{b_taom.title()} - {taomlar[b_taom]} so'm")
+#     else:
+#         print("Bunday taom bizda mavjud emas!")
+#
 
-for b_taom in b_taomlar:
-    if b_taom in taomlar:
-        print(f"{b_taom.title()} - {taomlar[b_taom]} so'm")
-    else:
-        print("Bunday taom bizda mavjud emas!")
+# ###############################  dars - 16  ######################################
 
+# data = [
+#     {
+#         "ism":"Abu Abdulloh Muhammad ibn Ismoil",
+#         "t_joy":"Buxoro",
+#         "t_yil":810,
+#         "umri":60,
+#         "asarlari":["Al-jome' as-sahih", "Al-adab al-mufrat", "At-tarix al-kabir", "At-tarix as-sag'ir"]
+#     },
+#     {
+#         "ism":"Abdulla Qodiriy",
+#         "t_joy":"Toshkent",
+#         "t_yil":1894,
+#         "umri":44,
+#         "asarlari":["O'tgan kunlar", "Mehrobdan chayon", "Obid ketmon"]
+#     },
+#     {
+#         "ism":"Erkin Vohidov",
+#         "t_joy":"Farg'ona",
+#         "t_yil":1936,
+#         "umri":80,
+#         "asarlari":["Tong nafasi", "Qo'shiqlarim sizga", "O'zbegim"]
+#     },
+#     {
+#         "ism":"Alisher Navoiy",
+#         "t_joy":"Hirot",
+#         "t_yil":1441,
+#         "umri":60,
+#         "asarlari":["Xamsa", "Lison ut-tayr","Mahbub al-qulub"]
+#     }
+# ]
+#
+# for i in data:
+#     print(f"\n{i['ism']}ning mashhur asarlari:")
+#     for asar in i['asarlari']:
+#         print(asar)
 
+# kinolar = {
+#     "Ali":["Terminator", "Rambo", "Titanik"],
+#     "Vali":["Tenet", "Insepshin", "Interstellar"],
+#     "Husan":["Abdullajon", "Bomba", "Shaytanat"],
+#     "Hasan":["Mahallada duv-duv gap","John Wick"]
+# }
+#
+# for ism in kinolar:
+#     print(f"\n{ism}ning sevimli kinolari:")
+#     for kinos in kinolar[ism]:
+#         print(kinos)
 
-
-
-
-
-
-
-
-
-
-
+# davlatlar = {
+#     "O'zbekiston":{"poytaxt":"Toshkent", "hudud":448978, "Aholisi":33000000, "pulbirligi":"so'm"},
+#     "Rossiya":{"poytaxt":"Moskva", "hudud":17098246, "Aholisi":144000000, "pulbirligi":"rubl"},
+#     "AQSH":{"poytaxt":"Vashington", "hudud":9631418, "Aholisi":327000000, "pulbirligi":"dollar"},
+#     "Malayziya":{"poytaxt":"Kuala-Lumpur", "hudud":329750, "Aholisi":25000000, "pulbirligi":"rinngit"}
+# }
+# davlat = input("Davlat nomini kiriting: ")
+# if davlat in davlatlar:
+#     print(f"\n{davlat}ning poytaxti {davlatlar[davlat]['poytaxt']}")
+#     print(f"Hududi: {davlatlar[davlat]['hudud']} kv.m\n"
+#           f"Pul birlig: {davlatlar[davlat]['pulbirligi']}\n"
+#           f"Aholisi: {davlatlar[davlat]['Aholisi']}")
+# else:
+#     print("Bizda bu davlat haqida ma'lumot mavjud emas")
 
 
 
