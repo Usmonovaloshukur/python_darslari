@@ -273,13 +273,117 @@
 # else:
 #     print('Xush kelibsiz foydalanuvchi')
 
-son = int(input("Istalgan butun son kiriting: "))
+# son = int(input("Istalgan butun son kiriting: "))
+#
+# for i in range(2,11):
+#     if son%i==0:
+#         print(f"{son} soni {i} soniga qoldiqsiz bo'linadi")
 
-for i in range(2,11):
-    if son%i==0:
-        print(f"{son} soni {i} soniga qoldiqsiz bo'linadi")
 
+# ##################################  dars - 14  ##########################
 
+# otam = {"ism": "islom", "familya":"oriqov", "tyil": 1972, "vil":"samarqand"}
+#
+# print(f"Menign otam {otam['ism'].title()} {otam['familya'].title()}, {otam['tyil']} da {otam['vil']} viloyatida tug'ilgan")
+
+# sevimli_taomlar = {"Farrux":"palov", "Azizbek":"shashlik", "Ro'zimurod":"ko'za sho'rva"}
+#
+# traom = sevimli_taomlar['Farrux']
+# print(f"Farruxning sevimli taomi {traom}")
+
+# python_lugat = {
+#     "if":"shartli operator",
+#     "upper()":"metodi string turidagi matndagi barcha harflarni katta harfga o'tkazadi",
+#     "lower()":"metodi string turidagi matndagi barcha harflarni kichik harfga o;tkazadi",
+#     "print()":"funksiyasi kodimizni natijasini konsolga chiqarishda ishlatiladi",
+#     "range(i,j,k)":"funksiya i dan j gacha bo'gan sonlarni k interval bilan chiqarib beradi",
+#     "list()":"list yasash uchun ishlatiladigan funksiya",
+#     "title()":"metodi matndagi so'zlarni birinchi harfini katta harfga o'zgartiradi",
+#     "capitalize()":"matndagi birinchi kelgan so'zni birinchi harfini bosh harfga aylantiradi",
+#     "for":"siklik operator",
+#     "and":"mantiqiy ko'paytirish operatori",
+#     "len()":"funksiyasi list elementlari sonini chiqarib beradi"
+# }
+#
+# kaliit_soz = input("Kalit so'z kiriting: ")
+#
+# if kaliit_soz in python_lugat.keys():
+#     print(python_lugat[kaliit_soz])
+# else:
+#     print("bunday terminni ma'nosini bilmayman")
+
+# ##################################   dars - 15  #################################
+
+# python_lugat = {
+#     "if":"shartli operator",
+#     "upper()":"metodi string turidagi matndagi barcha harflarni katta harfga o'tkazadi",
+#     "lower()":"metodi string turidagi matndagi barcha harflarni kichik harfga o;tkazadi",
+#     "print()":"funksiyasi kodimizni natijasini konsolga chiqarishda ishlatiladi",
+#     "range(i,j,k)":"funksiya i dan j gacha bo'gan sonlarni k interval bilan chiqarib beradi",
+#     "list()":"list yasash uchun ishlatiladigan funksiya",
+#     "title()":"metodi matndagi so'zlarni birinchi harfini katta harfga o'zgartiradi",
+#     "capitalize()":"matndagi birinchi kelgan so'zni birinchi harfini bosh harfga aylantiradi",
+#     "for":"siklik operator",
+#     "and":"mantiqiy ko'paytirish operatori",
+#     "len()":"funksiyasi list elementlari sonini chiqarib beradi"
+# }
+#
+# for kalit, qiymat in sorted(python_lugat.items()):
+#     print(f"{kalit}, -  {qiymat}")
+#
+
+# davlatlar = {
+#     "aqsh": "washington d.c",
+#     "rossiya": "moskva",
+#     "xitoy":"piken",
+#     "qozog'iston":"astana",
+#     "malayziya": "kuala-lumpur",
+#     "tojikiston":"dushanbe",
+#     "italiya":"rim",
+#     "ispaniya":"madrid",
+#     "angiliya":"london"
+# }
+#
+# print("Dunyo davlatlari:")
+# for davlat in sorted(davlatlar):
+#     print(f"{davlat.upper()}")
+#
+# print("Poytaxtlar:")
+# for poytaxt in sorted(davlatlar.values()):
+#     print(poytaxt.title())
+#
+# davlat = input("Siz qaysi davlatni poytaxtini bilishni xohlaysiz?  ").lower()
+# poytaxt = davlatlar.get(davlat)
+#
+# if poytaxt ==None:
+#     print("Kechirasiz bu davlat haqida bizda ma'lumot yo'q")
+# else:
+#     print(davlatlar[davlat].title())
+
+taomlar = {
+    "osh":32000,
+    "kabob":30000,
+    "non":6000,
+    "salat":12000,
+    "pepsi":15000,
+    "limonchoy":6000,
+    "baliqkabob":30000,
+    "jiz":60000,
+    "tovuqkabob":15000,
+    "lag'mon":25000,
+    "norin":20000
+}
+
+b_taomlar= []
+print("3 ta taom buyurtma bering! ")
+for i in range(3):
+    b_taomlar.append(input(f"{i+1} - taom: "))
+
+for b_taom in b_taomlar:
+    if b_taom in taomlar:
+        print(f"{b_taom.title()} - {taomlar[b_taom]} so'm")
+    else:
+        print("Bunday taom bizda mavjud emas!")
 
 
 
