@@ -105,19 +105,112 @@
 # for i,j in mahsulotlar.items():
 #     print(f"{i} ning narxi {j} so'm")
 
+#
+# buyurtmalar = ['olma','anjir','uzum','qovun']
+# mahsulotlar = {
+#     'olma':20000,
+#     'shaftoli':25000,
+#     'tarvuz':18000,
+#     'uzum':22000
+# }
+#
+# while buyurtmalar:
+#     buyurtma = buyurtmalar.pop()
+#     if buyurtma in mahsulotlar.keys():
+#         narx = mahsulotlar[buyurtma]
+#         print(f"{buyurtma} ning narxi {narx} so'm")
+#     else:
+#         print(f"Bizda {buyurtma} yo'q")
 
-buyurtmalar = ['olma','anjir','uzum','qovun']
-mahsulotlar = {
-    'olma':20000,
-    'shaftoli':25000,
-    'tarvuz':18000,
-    'uzum':22000
-}
+# ###########################    dars  - 19  #################################
 
-while buyurtmalar:
-    buyurtma = buyurtmalar.pop()
-    if buyurtma in mahsulotlar.keys():
-        narx = mahsulotlar[buyurtma]
-        print(f"{buyurtma} ning narxi {narx} so'm")
-    else:
-        print(f"Bizda {buyurtma} yo'q")
+# def t_yil(ism, yosh):
+#     """"ismingizni va yoshingizni kiritsangiz sizga tug'ilgan yilingizni
+#     ismingiz bilan birga chiqarib beruvchi funksiya"""
+#     print(f"{ism.title()} ning tug'ilgan yili {2023-yosh}")
+# t_yil("aloshukur", 24)
+
+# def kv_kub(a):
+#     """"Foydalanuvchidan son olib uni kubini va kvadratini topuvchi funksiya"""
+#     print(f"{a} ning kvadrati: {a*a} \n{a} ning kubi: {a*a*a}")
+# kv_kub(25)
+
+# def juftmi(a):
+#     """"Juft yoki toqlikka tekshiruvchi funksiya"""
+#     if a%2==0:
+#         print(f"{a} - juft")
+#     else:
+#         print(f"{a} - toq")
+#
+# juftmi(25)
+
+# def taqqosla(a,b):
+#     """"foydalanuvchidan ikkita son olib kattasini konsolga chiqaruvchi dastur"""
+#     if a>b:
+#         print(f"{a} > {b}")
+#     elif a<b:
+#         print(f"{a} < {b}")
+#     else:
+#         print(f"{a} = {b}")
+# taqqosla(25,55)
+
+
+# def daraja_hisibla(x, y=2):
+#     """"x ning y darajaga ko'taruvchi funksiya"""
+#     print(x**y)
+# daraja_hisibla(25,3)
+
+# def bulinadimi(a):
+#     """"Foydalanuvchidan son olib 2 dan 10 gacha bo'lgan sonlarga qoldiqsiz bo'linishini tekshiruvchi funksiya"""
+#     for i in range(2,11):
+#         if a%i==0:
+#             print(f"{a} soni {i} ga qoldiqsiz bo'linadi")
+# bulinadimi(70)
+
+# def info(ism, familya, t_yil, t_joy, email='', tel=''):
+#     """"Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi, email
+#     manzili va telefon raqamini qabul qilib, lug'at ko'rinishida qaytaruvchi funksiya"""
+#     mijoz ={
+#         "ism":ism,
+#         "familya":familya,
+#         "t_yil":t_yil,
+#         "t_joy":t_joy,
+#         'email':email,
+#         "tel":tel
+#     }
+#     return  mijoz
+#
+# print("Mijoz haqida ma'lumotlarni kiriting")
+# mijozlar = []
+# while True:
+#     ism = input("Ismi: ")
+#     familya = input("Familyasi: ")
+#     t_yil = input("Tug'ilgan yili: ")
+#     t_joy = input("Tug'ilgan joyi: ")
+#     email = input("Emaili: ")
+#     tel = input("Tel raqami: ")
+#     mijozlar.append(info(ism, familya, t_yil, t_joy, email, tel))
+#     javob = input("Davom etasizmi (yes/no)")
+#     if javob!='yes':
+#         break
+# print("Mijozlar:")
+# for mijoz in mijozlar:
+#     print(f"{mijoz['ism'].title()} {mijoz['familya'].title()} {mijoz['t_yil']} - yilda {mijoz['t_joy'].title()}da tavallud topgan.\n"
+#           f"Tel raqami: {mijoz['tel']}, Emaili kerar bo'lsa: {mijoz['email']}")
+#
+
+# def engkatta(a,b,c):
+#     """"uchta sondan  eng kattasini chiqarib beruvchi funksiya"""
+#     return  max([a,b,c])
+# print(engkatta(12,25,5465))
+
+def info(r):
+        """"Foydalanuvchidan aylaning radiusini qabul qilib olib,
+        uning radiusini, diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya"""
+        aylana={
+            "diametr":2*r,
+            "perimetri":2*3.14*r,
+            "yuzasi":3.14*r*r
+        }
+        return aylana
+print(info(25))
