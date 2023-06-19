@@ -243,3 +243,27 @@
 #     return sonlar
 #
 # print(fibonachi(25))
+
+################################  dars  -  21   ############################
+
+# def bahola(ismlar):
+#     baholar = {}
+#     for ism in ismlar:
+#         baho = input(f"Talaba {ism.title()}ning bahosini kiriting: ")
+#         baholar[ism]=baho
+#     return baholar
+#
+# talabalar = ['ali', 'vali', 'hasan', 'husan']
+# baholar = bahola(talabalar)
+# print(baholar)
+
+# def katta_harf(ismlar):
+#     katta = []
+#     for ism in ismlar:
+#         katta.append(ism.title())
+#     return katta
+#
+# talabalar = ['ali', 'vali', 'hasan', 'husan']
+# print(katta_harf(talabalar))
+# print(talabalar)
+
