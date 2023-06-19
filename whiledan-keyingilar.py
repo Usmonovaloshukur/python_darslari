@@ -204,13 +204,42 @@
 #     return  max([a,b,c])
 # print(engkatta(12,25,5465))
 
-def info(r):
-        """"Foydalanuvchidan aylaning radiusini qabul qilib olib,
-        uning radiusini, diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya"""
-        aylana={
-            "diametr":2*r,
-            "perimetri":2*3.14*r,
-            "yuzasi":3.14*r*r
-        }
-        return aylana
-print(info(25))
+# def info(r):
+#         """"Foydalanuvchidan aylaning radiusini qabul qilib olib,
+#         uning radiusini, diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya"""
+#         aylana={
+#             "diametr":2*r,
+#             "perimetri":2*3.14*r,
+#             "yuzasi":3.14*r*r
+#         }
+#         return aylana
+# print(info(25))
+
+# def tubsonlar(a,b):
+#     """"Berilgan oraliqdagi tub sonlar ro'yxatini qaytaruvchi funksiya"""
+#     sonlar = []
+#     for i in range(a,b):
+#         f=0
+#         for j in range(2,i):
+#             if i%j==0:
+#                 f=1
+#                 break
+#         if f==0:
+#             sonlar.append(i)
+#     return sonlar
+# print(tubsonlar(2,25))
+#
+# print(list(range(2,3)))
+
+# def fibonachi(n):
+#     sonlar = []
+#     a=0
+#     b=1
+#     for i in range(2,n):
+#         c=a+b
+#         a=b
+#         b=c
+#         sonlar.append(c)
+#     return sonlar
+#
+# print(fibonachi(25))
