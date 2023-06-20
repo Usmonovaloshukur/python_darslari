@@ -267,3 +267,49 @@
 # print(katta_harf(talabalar))
 # print(talabalar)
 
+#############################  dars -  22  ####################################
+
+# def summa(*sonlar):
+#     """"Kiritilgan sonlar yig'indisini hisoblovchi funksiya"""
+#     yigindi = 0
+#     for son in sonlar:
+#         yigindi +=son
+#     return yigindi
+# print(summa(12,25,36))
+
+# def summa(*sonlar):
+#     """Kiritilgan sonlar yig'indisini hisoblovchi funksiya"""
+#     return sum(sonlar)
+#
+# print(summa(12,25,36))
+
+
+# def summa(x,y, *sonlar):
+#     return  x+y+sum(sonlar)
+# print(summa(25,15,14,25,14,48,78))
+
+# def avto_info(kompaniya, model, **malumotlar):
+#     """Avto haqidagi ma'lumotlarni lug'at ko'rinishdia qaytaruvchi funksiya"""
+#     malumotlar['kompaniya'] = kompaniya
+#     malumotlar['model'] = model
+#     return malumotlar
+# avto1 = avto_info("GM", "Lacetti", narx =5000, rang="qizil")
+# print(avto1)
+
+# def kopaytma(*sonlar):
+#     """"Istalgancha sonlarni qabul qilib, ularning ko'paytmasini qaytaruvchi funksiya"""
+#     multiple = 1
+#     for son in sonlar:
+#         multiple*=son
+#     return multiple
+# print(kopaytma(22,15,21)
+
+# def info(ism,familya, **malumotlar):
+#     """"Talabalar haqidagi ma'lumotlarini lug'at ko'rinishida qaytaruvchi funkisya"""
+#     malumotlar["ism"] = ism
+#     malumotlar["familya"] = familya
+#     return malumotlar
+#
+# talaba1 = info("Farruxjon", "Uktamov", t_yil=2000, millati = "o'zbek", malumoti = 'oliy')
+# print(talaba1)
+
