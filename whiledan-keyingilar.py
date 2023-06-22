@@ -313,3 +313,86 @@
 # talaba1 = info("Farruxjon", "Uktamov", t_yil=2000, millati = "o'zbek", malumoti = 'oliy')
 # print(talaba1)
 
+
+###############################  dars - 24  #######################################
+
+# import math
+#
+# yuza = lambda r: math.pi*r*r
+# a=yuza(12)
+# print(a)
+
+# yigindi = lambda x,y:x+y
+# print(yigindi(12,25))
+
+# darja = lambda a,b:a**b
+# print(darja(25,2))
+
+# def daraja(n):
+#     return lambda x : x**n
+# kvadrat = daraja(2)
+# kub = daraja(3)
+#
+# a=kvadrat(2)
+# print(a)
+
+# map funksiyasi
+
+# from math import sqrt
+#
+# sonlar = list(range(1,11))
+# ildizlar = list(map(sqrt, sonlar))
+# print(ildizlar)
+
+# sonlar = list(range(1,11))
+
+# def daraja2(x):
+#     """"berilgan sonni kvadratini qaytaruvchi dastur"""
+#     return x*x
+# kvadratlar = list(map(daraja2, sonlar))
+#
+# print(kvadratlar)
+
+# kvadrat = list(map(lambda x:x*x,sonlar))
+# print(kvadrat)
+
+# a=[12,25,15]
+# b=[1,2,3]
+# a_plus_b = list(map(lambda x,y:x+y, a,b))
+#
+# print(a_plus_b)
+
+# ismlar = ["anvar", "sobir", "alisher", "jasur"]
+# katta = list(map(lambda ism: ism.title(), ismlar))
+# print(katta)
+
+
+# filter funksiyasi
+
+# import random as r
+#
+# sonlar = r.sample(range(100),10)
+#
+# def juftmi(x):
+#     """"Juft bo'lsa True, Toq bo'lsa False qaytaruvchi dastur"""
+#     return x%2==0
+#
+# juft_sonlar = list(filter(juftmi, sonlar))
+# print(juft_sonlar)
+
+# import random as r
+# sonlar = r.sample(range(100),10)
+#
+# juft_sonlar = list(filter(lambda son: son%2==0, sonlar))
+# print(f"{sonlar}\n"
+#       f"{juft_sonlar}")
+
+mevalar = ["olma", "shaftoli", "o'rik", "uzum", "nok","pomidor", "olcha", "gilos", "tarvuz", "qovun"]
+mevalar_o = list(filter(lambda meva:meva.startswith("o"), mevalar))
+print(mevalar_o)
+
+mevalar5= list(filter(lambda i:len(i)<=5, mevalar))
+print(mevalar5)
+
+mevalar_a = list(filter(lambda x:x.endswith("a"), mevalar))
+print(mevalar_a)
