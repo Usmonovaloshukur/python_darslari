@@ -43,8 +43,7 @@ def son_top_pc(n=10):
 def play(n=10):
     taxminlar = son_top(n)
     taxminlar_pc = son_top_pc(n)
-    yana  = True
-    while yana:
+    while True:
         if taxminlar>taxminlar_pc:
             print("Yutqazdingiz! Men yutdim")
         elif taxminlar<taxminlar_pc:
@@ -52,6 +51,8 @@ def play(n=10):
         else:
             print("Durrang!")
         yana = int(input("Yana o'ynaysizmi ha(1), yo'q(0)"))
+        if yana == 0:
+            break
 play()
 
 

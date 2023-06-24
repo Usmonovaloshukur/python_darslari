@@ -149,3 +149,88 @@
 #
 
 # print(see_methods(Avto))
+
+
+###############################   dars -  30   ##################################
+
+class Shaxs:
+    """"Shaxslar haqida ma'lumotlar"""
+    def __init__(self, ism, familya, passport, tyil):
+        self.ism = ism
+        self.familya = familya
+        self.passport = passport
+        self.tyil = tyil
+
+    def get_info(self):
+        """"Shaxs haqida ma'lunotlar"""
+        info = f"{self.ism} {self.familya}. Passport: {self.passport}, {self.tyil}-yilda tug'ilgan"
+        return info
+    def get_age(self):
+        """"Shaxsning yoshini qaytaruvchi metod"""
+        return 2023 - self.tyil
+
+
+class Talaba(Shaxs):
+    """Talaba klassi"""
+
+    def __init__(self, ism, familya, passport, tyil, idraqam, manzil):
+        """Talabaning xususiyatlari"""
+        super().__init__(ism, familya, passport, tyil)
+        self.idraqam = idraqam
+        self.bosqich = 1
+        self.manzil = manzil
+        self.fanlar = []
+
+    def get_id(self):
+        """Talabaning ID raqami"""
+        return self.idraqam
+
+    def get_bosqich(self):
+        """Talabaning o'qish bosqichi"""
+        return self.bosqich
+
+    def get_info(self):
+        """Talaba haqida ma'lumot"""
+        info = f"{self.ism} {self.familya}. "
+        info += f"{self.get_bosqich()}-bosqich. ID raqami: {self.idraqam}"
+        return info
+    def fanga_yozil(self, fanlar):
+        self.fanlar.append(fanlar)
+
+    def remove_fan(self, fan):
+        if fan in self.fanlar:
+            self.fanlar.remove(fan)
+        else:
+            return "Siz bu fanga yozilmagansiz"
+
+class Manzil:
+    """"Manzilni saqlash uchun klas"""
+    def __init__(self, uy, kocha, tuman, viloyat):
+        self.uy = uy
+        self.kocha = kocha
+        self.tuman = tuman
+        self.viloyat = viloyat
+    def get_manzil(self):
+        """"Manzilni ko'rish"""
+        manzil = f"{self.viloyat} viloyati, {self.tuman} tumani, " \
+                 f"{self.kocha} ko'chasi, {self.uy} - uyi"
+        return manzil
+
+class Fan:
+    def __init__(self, fan1, fan2, fan3, fan4):
+        self.fan1 = fan1
+        self.fan2 = fan2
+        self.fan3 = fan3
+        self.fan4 = fan4
+
+
+talaba_manzil = Manzil(9, "Dashti Ming", "Urgut", "Samarqand")
+talaba1 = Talaba("Aloshukur", "Usmonov", "AB4961314", 1999, "alosh254565", talaba_manzil)
+
+fanlar = Fan("Algebra", "Geometriya", "Mat analiz", "Falsafa")
+talaba1.fanga_yozil(fanlar)
+
+
+print(talaba1.fanlar[0].fan2)
+
+print(talaba1.manzil.get_manzil())
