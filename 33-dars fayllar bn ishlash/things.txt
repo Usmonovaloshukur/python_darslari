@@ -1,0 +1,9 @@
+faylni to'liqligicha o'qish
+papka ichidagi fayllarni ochish
+faylni qatorma-qator o'qish
+faylga yozish
+yangi faylga yozish
+faylga ma'lumot qo'shish
+o'zgaruvchilarni faylda saqlash
+pickle fayliga yozish
+pickledan o'qish
