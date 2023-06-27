@@ -1,8 +1,8 @@
 
 
-import datetime as dt
-import math
-import re
+# import datetime as dt
+# import math
+# import re
 
 # hozir = dt.datetime.now()
 # print(hozir)
@@ -37,15 +37,15 @@ import re
 # hozir = bugun.strftime("%d %m %Y, %H:%M")
 # print(hozir)
 
-hozir = dt.date.today()
-workdate = dt.date(2023, 9, 5)
-
-farq = workdate - hozir
-# print(round(farq.days/30), " months")
-
-datebirth = dt.date(1999, 12, 6)
-umr = hozir - datebirth
-days = umr.days
+# hozir = dt.date.today()
+# workdate = dt.date(2023, 9, 5)
+#
+# farq = workdate - hozir
+# # print(round(farq.days/30), " months")
+#
+# datebirth = dt.date(1999, 12, 6)
+# umr = hozir - datebirth
+# days = umr.days
 
 # print(f"{days}")
 
