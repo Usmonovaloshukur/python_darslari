@@ -53,3 +53,25 @@
 #
 # print("Python is " + x)
 
+# #####################  type conversion
+
+# z = 10
+# x = complex(z)
+# print(x)
+# print(type(x))
+#
+# z_float = float(z)
+# print(z_float)
+
+# a = -25.7
+# b = int(a)
+# print(b)
+
+# a = 12 + 13j
+# b = int(a)
+# print(b)
+# # typeError argument of int() must be string, bytes-like object or a real number
+
+
+
+
