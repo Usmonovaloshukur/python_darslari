@@ -75,3 +75,12 @@
 
 # numbers tugadi w3scholldan
 
+# #############################   pythpon strings  ########################
+
+# txt = "The best thing in life is free!"
+#
+# print('free' in txt)  # result: True
+
+# a = "Hello world"
+# print(a[2:5])
+# print(a[-5:-2])
