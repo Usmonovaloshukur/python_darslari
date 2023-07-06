@@ -84,3 +84,41 @@
 # a = "Hello world"
 # print(a[2:5])
 # print(a[-5:-2])
+
+
+# text = "   pyhton is best    "
+# print(text)
+# print(text.strip())
+
+
+# a = "hello world"
+# print(a.replace("h","H"))
+
+# a = "hello world and dunyo"
+# print(a.split())
+# print(a.split(","))
+
+# ###################################  format string #####################
+
+# age = 36
+# text = "My name is John, I am {}"
+# print(text.format(age))  # result: My name is John, I am 36
+
+# quantity = 3
+# itemno = 567
+# price = 49.95
+#
+# myorder = "I want {} pices of item {} for {} dollars"
+#
+# print(myorder.format(quantity, itemno, price))
+#
+#
+#
+# quantity = 3
+# itemno = 567
+# price = 49.95
+#
+# myorder = "I want {2} pices of item {1} for {0} dollars"
+#
+# print(myorder.format( itemno, quantity, price))
+
